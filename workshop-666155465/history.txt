@@ -1,0 +1,182 @@
+v0.38
+- Fixed crash in Brazilian language.
+
+v0.37
+- Updated Traditional Chinese Language.
+
+v0.36
+- Fixed Chinese language.
+- Added Spanish language.
+
+v0.35
+- Fixed missing Korean language in mod options.
+- Minor fixes in Korean language.
+
+v0.34
+- Hotfix.
+
+v0.33
+- Added Korean language. Thanks: Heart_bit
+
+v0.32
+- Added an option for language.
+
+v0.31
+- Added support of chinese TGP.
+
+v0.30
+- Added more chests to supported chest list (highlighting).
+- Added TUNING.MONITOR_CHESTS to API for custom chests. Example:
+[code]
+TUNING.MONITOR_CHESTS = TUNING.MONITOR_CHESTS or {}
+TUNING.MONITOR_CHESTS.custom_chest = true -- For highlighting.
+[/code]
+- Added support of backpacks (highlighting).
+- Added inst.ShowMeColor to API. Now you can overwrite this function in your mod.
+[code]
+inst.ShowMeColor = function(enabled)
+    if enabled then
+        inst.AnimState:SetMultColour(0.3,1,1,1) --green
+    else
+        inst.AnimState:SetMultColour(1,1,1,1) --normal
+    end
+end
+[/code]
+
+v0.29
+- Bundles support while highlighting.
+- Added "timer" component support.
+- Added gold units (tradable component) support.
+- Rounded maximum uses.
+- Added durability info for armor items.
+- Added attack info (may be wrong for special skills of the monsters).
+- Added AoE attack info (experiment).
+
+v0.28
+- Fixed wrong info on Pickle Barrel.
+- Added support of "Thirst" mod.
+
+v0.27
+- Hotfix.
+(Silent update. Server will be able accept new users without restart).
+
+v0.26
+- Fixed rare crash issue.
+
+v0.25
+- Added API for authors of other mods.
+- Added support of custom mod function: inst.GetShowItemInfo
+- Added info about growing (grass etc)
+- Added info about product and growing time on plants.
+- Added info about items in Bundled Supplies.
+- Added color to treasure chest if item is in cursor.
+- Added color to treasure chest on mouse over the ingredient in recipe UI.
+
+
+v0.24
+- Beefalo hunger 50-100% will be shown.
+- Beefalo domestication will be shown.
+- The hunger is rounded up to integer.
+- Added info to pets and animals (perishable component).
+- Added info to Bird Cage.
+- Added info to campfire and coldfire.
+- Added info to Drying Rack.
+- Added info to saddlers
+- Added info to rocks and flints (if exists via other mods).
+
+v0.23
+- Chinese updated. Thanks 狼猫先生
+
+v0.22
+- Hotfix.
+
+v0.21
+- Minor language update.
+
+v0.20
+- Improved compatibility with Combined Status mod. Now client settings will affect temperature units.
+
+v0.19
+- Added cooldown timer (e.g. for Abigail Flower).
+- Updated Russian and Chinese translations.
+
+v0.186
+- Minor fixes for Polish Language.
+
+v0.185
+- Changed Polish declension of numerals.
+
+v0.184
+- Hotfix.
+
+v0.183
+- Fixed Polish Language (last time I guess).
+- Translated "fat" tag in Polish and Russian.
+ 
+
+v0.182
+- Fixed Polish Language (test).
+
+v0.181
+- Hotfix.
+
+v0.18
+- Added Polish Language (test). Thanks Hast ( http://steamcommunity.com/profiles/76561198062720007/ )
+
+v0.17
+- Added the option to hide food units info.
+
+v0.16
+- Added Traditional Chinese (by Skull).
+
+v0.151
+- Removed spam from log.txt
+
+v0.15
+- Added Brazilian Portuguese language. Thanks to Salsa.
+- Added estimation of spoilage.
+
+v0.14
+- Fixed compatibility with outdated DST Freezer mod. Don't use it despite compatibility.
+- Fixed inspection of finiteuses component. Thanks Skull.
+- Translated food tags (Chinese). Thanks Skull.
+
+v0.13
+- Added possibility to translate food tags to any language.
+- Translated food tags (Russian).
+- Changed icon. Added informative screen-shot to Steam. Thanks Foxy the cunning fox.
+- Added temperature info for Heat Rock.
+- Added support of Combined Status on client side.
+- Celsius is used everywhere in the mod.
+
+v0.12
+- Fixed rare crash. Possible Klei bug:
+http://forums.kleientertainment.com/klei-bug-tracker/dont-starve-together/random-mod-system-bug-r1062/
+
+v0.10
+- Passed Klei bug.
+
+v0.09
+- Fixed Chinese Language.
+
+v0.08
+- Added language: Simplified Chinese.
+- Added some Russian strings.
+- Fixed "+" sign in character's sanity.
+
+v0.07
+- Added perish info.
+- Fixed inventory bar interface offset.
+- Added support of inst.is_admin variable for GMs in custom game mode.
+- Disabled info for ThePlayer.
+
+v0.06
+- Minor fix.
+
+v0.05
+- Fixed some typo.
+- Improved traffic optimization.
+- Added many language support (without translation yet).
+- Added Russian support.
+- Added beefalo obedience.
+
