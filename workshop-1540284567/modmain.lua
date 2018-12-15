@@ -190,28 +190,6 @@ AddPrefabPostInit("eyeturret_item",function(inst)
 end)
 end
 
-if IsServer then
-AddPrefabPostInit("wetpouch",function(inst)
-   if(inst.components.stackable == nil) then
-      inst:AddComponent("stackable")
-   end
-   inst.components.inventoryitem:SetOnDroppedFn(function(inst)
-        inst.components.perishable:StopPerishing()
-        inst.sg:GoToState("stunned")
-        if inst.components.stackable then
-    	    while inst.components.stackable:StackSize() > 1 do
-    	        local item = inst.components.stackable:Get()
-    	        if item then
-    	            if item.components.inventoryitem then
-    	                item.components.inventoryitem:OnDropped()
-    	            end
-    	            item.Physics:Teleport(inst.Transform:GetWorldPosition() )
-    	        end
-    	    end
-    	 end
-    end)
-end)
-end
 
 ----------------------------------------
 local MaxStack = GetModConfigData("MAXSTACKSIZE")

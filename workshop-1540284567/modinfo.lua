@@ -6,7 +6,7 @@ description = "Changes the maximum size of itemstacks of all stackable items to 
 
 author = "Dyl"
  
-version = " 2.1"
+version = " 2.2"
 
 api_version = 10
 
